@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://datiie43uq7fu"]
+
+[ext_resource type="Script" uid="uid://dnijvsk2poudf" path="res://scenes/despawner.gd" id="1_3elch"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vft2f"]
+
+[node name="Despawner" type="RigidBody2D" unique_id=1027468027]
+disable_mode = 1
+collision_layer = 2
+collision_mask = 2
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("1_3elch")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1622621217]
+scale = Vector2(3.9199994, 3.9199994)
+shape = SubResource("RectangleShape2D_vft2f")

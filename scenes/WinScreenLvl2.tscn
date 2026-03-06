@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b118raiaapl7m"]
+
+[ext_resource type="Texture2D" uid="uid://d0xi3jghkp5hk" path="res://assets/Keanu.png" id="1_w4xn2"]
+[ext_resource type="Script" uid="uid://drur6sr8w558x" path="res://scenes/restart_button.gd" id="2_iefde"]
+
+[node name="WinScreen" type="Sprite2D" unique_id=450684879]
+position = Vector2(565, 322)
+texture = ExtResource("1_w4xn2")
+
+[node name="Button" type="Button" parent="." unique_id=1514196420]
+offset_left = -91.0
+offset_top = 69.0
+offset_right = 91.0
+offset_bottom = 134.0
+text = "Click here to restart"
+script = ExtResource("2_iefde")
+
+[connection signal="pressed" from="Button" to="Button" method="_button_pressed"]

@@ -1,10 +1,21 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene format=3 uid="uid://g1b35y8xj8vv"]
 
-[ext_resource path="res://assets/dead.jpg" type="Texture2D" id=1]
+[ext_resource type="Texture2D" uid="uid://bi5p7hlw4wlhv" path="res://assets/dead.jpg" id="1"]
+[ext_resource type="Script" uid="uid://drur6sr8w558x" path="res://scenes/restart_button.gd" id="2_x3j6d"]
 
-[node name="LoseScreen" type="Node2D"]
+[node name="LoseScreen" type="Node2D" unique_id=1041190668]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2( 512, 320 )
-scale = Vector2( 0.76, 0.76 )
-texture = ExtResource( 1 )
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1440955503]
+position = Vector2(587, 372.99997)
+scale = Vector2(0.76, 0.76)
+texture = ExtResource("1")
+
+[node name="Button" type="Button" parent="." unique_id=733385080]
+offset_left = 499.0
+offset_top = 489.0
+offset_right = 681.0
+offset_bottom = 554.0
+text = "Click here to restart"
+script = ExtResource("2_x3j6d")
+
+[connection signal="pressed" from="Button" to="Button" method="_button_pressed"]

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cwusc4sygc04t"]
+
+[ext_resource type="Script" uid="uid://dor7jw2os4530" path="res://scenes/spawner_lvl2.gd" id="1_ik2nu"]
+[ext_resource type="PackedScene" uid="uid://mem4cms6pjpr" path="res://scenes/fly.tscn" id="2_tx2ig"]
+
+[node name="Spawner" type="Node2D" unique_id=808579739]
+script = ExtResource("1_ik2nu")
+obstacle = ExtResource("2_tx2ig")
